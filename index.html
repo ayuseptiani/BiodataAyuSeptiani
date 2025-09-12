@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-gray-800 shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Portfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#Riwayat Pendidikan" class="hover:text-blue-400">Pendidikan</a></li>
+        <li><a href="#Pengalaman Organisasi" class="hover:text-blue-400">Organisasi</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#project" class="hover:text-blue-400">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center">
+    <img src="Image/foto utama.jpg" alt="profile" class="w-40 h-40 rounded-full border-4 border-blue-400 shadow-lg mb-6">
+    <h2 class="text-4xl font-bold">Hello, I'm <span class="text-blue-400">Ni Putu Ayu Septiani</span></h2>
+    <p class="mt-4 text-lg">I am a Computer Science Student</p>
+
+    <div class="flex space-x-4 mt-6">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/ayssynti" target="_blank">
+        <img src="Image/instagram logo.png" alt="Instagram" class="w-8 h-8 hover:opacity-75">
+      </a>
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@sheeyaalala" target="_blank">
+        <img src="Image/logo tiktok.png" alt="TikTok" class="w-8 h-8 hover:opacity-75">
+      </a>
+    </div>
+
+    <a href="#about" class="mt-8 px-6 py-3 bg-blue-500 rounded-lg shadow hover:bg-blue-600">More About Me</a>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="py-20 bg-gray-800">
+  <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <img src="Image/foto land1.jpg" class="rounded-lg shadow-lg w-80 mx-auto">
+
+    <div>
+      <h2 class="text-3xl font-bold mb-4">About <span class="text-blue-400">Me</span></h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Saya Tiya, seorang mahasiswa semester 5 Program Studi S1 Ilmu Komputer di Universitas Pendidikan Ganesha.
+        Selama masa perkuliahan, saya tidak hanya fokus pada teori dan praktik di bidang computer science, tetapi juga aktif terlibat dalam Organisasi kemahasiswaan.
+      </p>
+
+      <!-- Tombol sejajar -->
+      <div class="flex flex-wrap gap-4">
+        <a href="#skills" class="px-6 py-3 bg-blue-500 rounded-lg shadow hover:bg-blue-600">
+          More About Me
+        </a>
+        <a href="cv.pdf" download
+           class="px-6 py-3 bg-gray-900 text-white border border-white rounded-lg shadow hover:bg-blue-600 flex items-center gap-2">
+          Download CV 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Riwayat Pendidikan -->
+<section class="my-12 px-4">
+  <h2 class="text-2xl font-semibold mb-8 text-center">Riwayat Pendidikan</h2>
+  
+  <div class="max-w-5xl mx-auto grid grid-cols-2 gap-8">
+    <!-- Kiri 1 -->
+    <div class="bg-blue-700 text-white p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-medium">SD Negeri Selisihan</h3>
+      <p>2010 - 2016</p>
+    </div>
+    <!-- Kanan 1 -->
+    <div class="bg-blue-700 text-white p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-medium">SMP Negeri 2 Banjarangkan</h3>
+      <p>2016 - 2019</p>
+    </div>
+    <!-- Kiri 2 -->
+    <div class="bg-blue-700 text-white p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-medium">SMA Negeri 2 Semarapura</h3>
+      <p>2019-2023</p>
+    </div>
+    <!-- Kanan 2 -->
+    <div class="bg-blue-700 text-white p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-medium">Universitas Pendidikan Ganesha</h3>
+      <p>2023 - Sekarang</p>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Organisasi -->
+<section id="experience" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-16">Experience <span class="text-blue-400">Organisasi</span></h2>
+    
+<div class="relative flex justify-center items-center">
+  <!-- Efek Cahaya di belakang -->
+  <div class="absolute w-80 h-80 bg-blue-400 rounded-full blur-3xl opacity-50"></div>
+
+  <!-- Foto Tengah dengan gradient bottom -->
+  <img src="Image/foto3.png" 
+       alt="Foto Saya" 
+       class="relative w-120 h-80 object-cover"
+       style="mask-image: linear-gradient(to top, transparent 0%, black 30%, black 100%);
+              -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%, black 100%);">
+</div>
+
+
+      <!-- Kartu Kiri -->
+      <div class="absolute left-0 top-10 w-72 bg-gray-800 p-6 rounded-xl shadow-lg text-left">
+        <h3 class="text-xl font-semibold mb-2">UKM PIK-M PELANA</h3>
+        <p class="text-gray-300 text-sm">Wakil Ketua Umum (2023 - Sekarang)</p>
+        <img src="Image/UKM.jpg" class="w-full h-32 object-cover rounded-lg mt-3" alt="Dokumentasi">
+      </div>
+
+      <!-- Kartu Kanan -->
+      <div class="absolute right-0 bottom-10 w-72 bg-gray-800 p-6 rounded-xl shadow-lg text-left">
+        <h3 class="text-xl font-semibold mb-2">BEM Fakultas Teknik dan Kejuruan</h3>
+        <p class="text-gray-300 text-sm">Anggota Divisi Media dan Informasi (2024 - 2025)</p>
+        <img src="Image/BEM.jpg" class="w-full h-32 object-cover rounded-lg mt-3" alt="Dokumentasi">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20">
+    <!-- Technical Skills -->
+<div>
+  <h3 class="text-xl font-semibold mb-6 text-center">Technical Skills</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+    
+    <!-- Skill 1 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/Logo canva.png" alt="bingung" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">bingung</p>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/Logo corel.png" alt="Corel Draw" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Corel Draw</p>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/Logo canva.png" alt="Canva" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Canva</p>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/logo figma.png" alt="Figma" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Figma</p>
+    </div>
+
+    <!-- Skill 5 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/capcut.png" alt="Capcut" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Capcut</p>
+    </div>
+
+    <!-- Skill 6 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/logo ps.png" alt="Photoshop" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Photoshop</p>
+    </div>
+
+    <!-- Skill 7 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/logo excel.png" alt="Excel" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Excel</p>
+    </div>
+
+    <!-- Skill 8 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 hover:shadow-blue-500/50 transition">
+      <img src="Image/logo word.png" alt="Microsoft Word" class="w-16 h-16 mx-auto mb-3">
+      <p class="text-gray-300">Microsoft Word</p>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- Professional Skills -->
+    <div class="mt-12"> 
+     <h3 class="text-2xl font-bold mb-10 text-center">Professional Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+        <div class="p-6 bg-gray-800 rounded-lg shadow text-center">
+          <h4 class="text-lg font-semibold">Creativity</h4>
+          <p class="text-blue-400 font-bold">90%</p>
+        </div>
+
+        <div class="p-6 bg-gray-800 rounded-lg shadow text-center">
+          <h4 class="text-lg font-semibold">Communication</h4>
+          <p class="text-blue-400 font-bold">80%</p>
+        </div>
+
+        <div class="p-6 bg-gray-800 rounded-lg shadow text-center">
+          <h4 class="text-lg font-semibold">Problem Solving</h4>
+          <p class="text-blue-400 font-bold">75%</p>
+        </div>
+
+        <div class="p-6 bg-gray-800 rounded-lg shadow text-center">
+          <h4 class="text-lg font-semibold">Teamwork</h4>
+          <p class="text-blue-400 font-bold">90%</p>
+        </div>
+
+        <div class="p-6 bg-gray-800 rounded-lg shadow text-center">
+          <h4 class="text-lg font-semibold">Leadership</h4>
+          <p class="text-blue-400 font-bold">70%</p>
+        </div>
+
+        <div class="p-6 bg-gray-800 rounded-lg shadow text-center">
+          <h4 class="text-lg font-semibold">Time Management</h4>
+          <p class="text-blue-400 font-bold">86%</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Kalkulator Luas Bangun Datar -->
+<section id="project" class="py-20 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10 text-center">Project</h2>
+
+    <!-- Kalkulator -->
+    <div class="bg-white text-gray-800 rounded-xl p-8 shadow-lg shadow-blue-500/70">
+      <h1 class="text-2xl font-bold text-center mb-6 text-blue-700">Kalkulator Luas Bangun Datar</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Pilih Bangun -->
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-gray-700">Bangun Datar</label>
+            <select id="bangun" class="w-full border-2 border-blue-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="persegi">Persegi</option>
+              <option value="persegiPanjang">Persegi Panjang</option>
+              <option value="segitiga">Segitiga</option>
+              <option value="lingkaran">Lingkaran</option>
+              <option value="trapesium">Trapesium</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-gray-700">Satuan Panjang</label>
+            <select id="satuan" class="w-full border-2 border-blue-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="cm">cm</option>
+              <option value="m">m</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Input Parameter -->
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-gray-700">Parameter</label>
+            <div id="parameter" class="space-y-3"></div>
+          </div>
+          <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            onclick="hitung()">Hitung Luas</button>
+        </div>
+      </div>
+
+      <!-- Rumus & Hasil -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+        <div class="border-2 border-blue-400 rounded-lg p-6 bg-gray-50">
+          <h3 class="text-sm font-bold text-gray-700 mb-2">Rumus</h3>
+          <p id="rumus" class="text-gray-600">--</p>
+        </div>
+        <div class="border-2 border-blue-400 rounded-lg p-6 bg-gray-50">
+          <h3 class="text-sm font-bold text-gray-700 mb-2">Hasil</h3>
+          <p id="hasil" class="text-gray-600">Isi parameter lalu klik Hitung Luas.</p>
+        </div>
+      </div>
+
+      <!-- Tombol -->
+      <div class="text-center mt-8">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow font-semibold"
+          onclick="hitung()">Hitung Luas</button>
+        <button class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg shadow font-semibold ml-3"
+          onclick="resetForm()">Reset</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Contact <span class="text-blue-400">Me</span></h2>
+      <form id="contactForm" class="max-w-xl mx-auto space-y-4">
+        <input type="text" name="name" placeholder="Enter Your Name" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="email" name="email" placeholder="Enter Your Email" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="text" name="subject" placeholder="Enter Your Subject" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <textarea name="message" placeholder="Enter Your Message" rows="5" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        <button class="px-6 py-3 bg-blue-500 rounded-lg shadow hover:bg-blue-600">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400">
+    Developed with ❤ by Tiya
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const parameterDiv = document.getElementById("parameter");
+    const rumusP = document.getElementById("rumus");
+    const hasilP = document.getElementById("hasil");
+    const bangunSelect = document.getElementById("bangun");
+
+    bangunSelect.addEventListener("change", tampilkanInput);
+
+    function tampilkanInput() {
+      const bangun = bangunSelect.value;
+      let html = "";
+      if (bangun === "persegi") {
+        html = '<label>Sisi:</label><input type="number" id="sisi" class="border rounded p-1 w-full">';
+        rumusP.innerText = "L = s × s";
+      } else if (bangun === "persegiPanjang") {
+        html = '<label>Panjang:</label><input type="number" id="panjang" class="border rounded p-1 w-full">' +
+               '<label>Lebar:</label><input type="number" id="lebar" class="border rounded p-1 w-full">';
+        rumusP.innerText = "L = p × l";
+      } else if (bangun === "segitiga") {
+        html = '<label>Alas:</label><input type="number" id="alas" class="border rounded p-1 w-full">' +
+               '<label>Tinggi:</label><input type="number" id="tinggi" class="border rounded p-1 w-full">';
+        rumusP.innerText = "L = ½ × a × t";
+      } else if (bangun === "lingkaran") {
+        html = '<label>Jari-jari:</label><input type="number" id="jari" class="border rounded p-1 w-full">';
+        rumusP.innerText = "L = π × r²";
+      } else if (bangun === "trapesium") {
+        html = '<label>Sisi Sejajar 1 (a):</label><input type="number" id="a" class="border rounded p-1 w-full">' +
+               '<label>Sisi Sejajar 2 (b):</label><input type="number" id="b" class="border rounded p-1 w-full">' +
+               '<label>Tinggi (t):</label><input type="number" id="t" class="border rounded p-1 w-full">';
+        rumusP.innerText = "L = ½ × (a + b) × t";
+      }
+      parameterDiv.innerHTML = html;
+    }
+
+    function hitung() {
+      const bangun = bangunSelect.value;
+      let luas = 0;
+      if (bangun === "persegi") {
+        let s = +document.getElementById("sisi").value;
+        luas = s * s;
+      } else if (bangun === "persegiPanjang") {
+        let p = +document.getElementById("panjang").value;
+        let l = +document.getElementById("lebar").value;
+        luas = p * l;
+      } else if (bangun === "segitiga") {
+        let a = +document.getElementById("alas").value;
+        let t = +document.getElementById("tinggi").value;
+        luas = 0.5 * a * t;
+      } else if (bangun === "lingkaran") {
+        let r = +document.getElementById("jari").value;
+        luas = (Math.PI * r * r).toFixed(2);
+      } else if (bangun === "trapesium") {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let t = +document.getElementById("t").value;
+        luas = 0.5 * (a + b) * t;
+      }
+      hasilP.innerText = "Luas = " + luas + " " + document.getElementById("satuan").value + "²";
+    }
+
+    function resetForm() {
+      parameterDiv.innerHTML = "";
+      rumusP.innerText = "--";
+      hasilP.innerText = "Setelah mengisi parameter lalu klik Hitung Luas.";
+    }
+
+    // Default awal
+    tampilkanInput();
+
+    // Validasi Form Kontak
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let name = this.name.value.trim();
+      let email = this.email.value.trim();
+      let message = this.message.value.trim();
+
+      if (!name || !email || !message) {
+        alert("⚠ Harap isi semua field sebelum submit!");
+      } else {
+        alert("✅ Pesan berhasil dikirim! Terima kasih, " + name + " 🙌");
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>
